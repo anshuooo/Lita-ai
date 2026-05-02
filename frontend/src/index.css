@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fff9eb;
+  --color-gold-100: #ffefc2;
+  --color-gold-200: #ffde85;
+  --color-gold-300: #ffc647;
+  --color-gold-400: #ffae1a;
+  --color-gold-500: #f58e00;
+  --color-gold-600: #d66e00;
+  --color-gold-700: #b34f00;
+  --color-gold-800: #913f08;
+  --color-gold-900: #78350c;
+  --color-gold-950: #451a03;
+
+  --font-sans: "Inter", "system-ui", "sans-serif";
+  --font-display: "Playfair Display", "serif";
+}
+
+@source "../index.html";
+@source "./**/*.{js,ts,jsx,tsx}";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for modules if needed */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+.section-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
